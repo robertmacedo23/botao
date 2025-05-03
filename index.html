@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Brincando com as cores de fundo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.5s ease;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="mudarCor()">Clique aqui</button>
+
+  <script>
+    function mudarCor() {
+      const cores = ["#FFDDC1", "#C1FFD7", "#C1D4FF", "#EAC1FF", "#FFF3C1"];
+      const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+      document.body.style.backgroundColor = corAleatoria;
+    }
+  </script>
+
+</body>
+</html>
+
